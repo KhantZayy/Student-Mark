@@ -32,7 +32,6 @@ if username == username_input and password == password_input:
     time_study = st.number_input('Enter your study time : ')
     predict = model.predict(pd.DataFrame({'number_courses' : [number_course],
                             'time_study' : time_study}))
-    if username_input and password_input:
-        st.write(f'Predicted Mark {predict}')
+    st.write(f'Predicted Mark {predict}')
 else:
     st.write('Wrong username or password')
