@@ -18,7 +18,7 @@ model.fit(trainX, trainY)
 y_predict = model.predict(testX)
 
 st.title(':blue[Login Session]')
-st.text('Enter your Student :blue[ID, Username and Password].')
+st.text('Enter your Student [ID, Username and Password].')
 
 username = 'khant'
 password = 123
@@ -33,3 +33,5 @@ if username == username_input and password == password_input:
     predict = model.predict(pd.DataFrame({'number_courses' : [number_course],
                             'time_study' : time_study}))
     st.write(f'Predicted Mark {predict}')
+else:
+    st.write('Wrong username or password')
