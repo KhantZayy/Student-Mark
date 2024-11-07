@@ -28,8 +28,8 @@ password_input = st.number_input('Password : ')
 
 if username == username_input and password == password_input:
     st.title('Mark Prediction')
-    number_course = st.number_input('Enter number of courses : ',value = None)
-    time_study = st.number_input('Enter your study time : ',value =None)
+    number_course = st.number_input('Enter number of courses : ')
+    time_study = st.number_input('Enter your study time : ')
     predict = model.predict(pd.DataFrame({'number_courses' : [number_course],
                             'time_study' : time_study}))
     if username_input and password_input:
