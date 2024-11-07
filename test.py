@@ -16,10 +16,21 @@ model = LinearRegression()
 model.fit(trainX, trainY)
 
 y_predict = model.predict(testX)
+
+st.title(':blue[Login Session]')
+st.text('Enter your Student :blue[ID, Username and Password].')
+
+
+
+
+
+
+
+
 # for i in range(len(y_predict)):
 #     print(f"True Value: {testY.iloc[i]}, Features: {testX.iloc[i].values}, Predicted Value: {y_predict[i]}")
-number_couses = float(input('Enter number of courses : '))
-study_time = float(input('Enter study time : '))
-data = model.predict(pd.DataFrame({'number_courses': [number_couses],
-                        'time_study': study_time}))
-print(f'Predicted Mark: {data}')
+# number_couses = float(input('Enter number of courses : '))
+# study_time = float(input('Enter study time : '))
+# data = model.predict(pd.DataFrame({'number_courses': [number_couses],
+#                         'time_study': study_time}))
+# print(f'Predicted Mark: {data}')
