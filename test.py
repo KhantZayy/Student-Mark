@@ -23,7 +23,7 @@ st.text('Enter your Student :blue[ID, Username and Password].')
 username = 'khant'
 password = 123
 
-username_input = st.text_input('Username', 'Enter your username : ')
+username_input = st.text_input('Username : ')
 password_input = st.number_input('Password : ')
 
 if username == username_input and password == password_input:
